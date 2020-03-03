@@ -1,12 +1,16 @@
 # bot.py
 import os
 import random
+import sys
 
 from discord.ext import commands
 from dotenv import load_dotenv
 
 load_dotenv()
-token = os.getenv('DISCORD_TOKEN')
+#token = os.getenv('DISCORD_TOKEN')
+token = 'Njc3MzI0NzgxMjA4NjAwNTc4.Xl3IYg.1JkX3SZrWZ3LQoQaGR7uqKsqpGE'
+
+sys.stdout.write("Token = " + token + "\n")
 
 bot = commands.Bot(command_prefix='!')
 
@@ -34,4 +38,4 @@ async def bible_verse(ctx):
     await ctx.send(response)
 
 
-bot.run(token)
+bot.run('Njc3MzI0NzgxMjA4NjAwNTc4.Xl3IYg.1JkX3SZrWZ3LQoQaGR7uqKsqpGE')
